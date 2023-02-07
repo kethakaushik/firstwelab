@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <h1>Square Root</h1>
+        <style>
+            h1,body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="first" placeholder="Enter a number"><br><br>
+        <button type="button" onclick="sqroot()">SQROOT</button>
+        <p id="p"></p>
+        <script>
+            function sqroot(){
+                var a=document.getElementById("first").value;
+                var sqrt;
+                sqrt=Math.sqrt(a);
+                console.log(sqrt);
+                document.getElementById("p").innerHTML="Square root of "+a+" is "+sqrt;
+            }
+        </script>
+    </body>
+</html>

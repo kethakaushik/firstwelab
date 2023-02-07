@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <h1>Swap</h1>
+        <style>
+            h1,body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="first" placeholder="Enter a value"><br><br>
+        <input type="text" id="second" placeholder="Enter b value"><br><br>
+        <button type="button" onclick="swap()">SQROOT</button>
+        <p id="p"></p>
+        <script>
+            function swap(){
+                var a=document.getElementById("first").value;
+                var b=document.getElementById("second").value;
+                var a;
+                var b;
+                var temp;
+                temp=a;
+                a=b;
+                b=temp;
+                console.log(a);
+                console.log(b);
+               
+                document.getElementById("p").innerHTML="a value  is " +a+" b value  is " +b;
+            }
+        </script>
+    </body>
+</html>
