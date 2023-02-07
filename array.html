@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">array methods:</h1>
+    <script>
+        var arr=[1,"mango","orange"];
+        arr.push("banana");
+        document.write("<h2>after push:</h2>"+arr);
+        arr.pop();
+        document.write("<h2>after pop:</h2>"+arr);
+        arr.unshift(2);
+        document.write("<h2>after unshift:</h2>"+arr);
+        arr.shift();
+        document.write("<h2>after shift:</h2>"+arr);
+        document.write("<h2>length of arr:</h2>"+arr.length);
+        var array=[1,2,3,5];
+        array.splice(3,1,4);
+        document.write("<h2>after splice:</h2>"+array);
+        array=array.concat(arr);
+        document.write("<h2>after concat:</h2>"+array);
+    </script>
+</body>
+</html>
